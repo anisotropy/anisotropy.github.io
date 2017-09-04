@@ -1,0 +1,8 @@
+.DS_Store
+.*.swp
+*.old
+npm-debug.log
+package-lock.json
+node_modules/
+script/script.js
+css/style.css
