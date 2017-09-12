@@ -5,7 +5,7 @@ class Home extends PureComponent {
 	render(){
 		return (
 			<div className="home">
-				Home
+				Home -- refresh
 			</div>
 		);
 	}

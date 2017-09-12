@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "start": "webpack --watch",
+    "start": "node_modules/.bin/webpack-dev-server --progress",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "author": "hodoug",
@@ -26,7 +26,8 @@
     "postcss-loader": "^2.0.3",
     "precss": "^2.0.0",
     "style-loader": "^0.18.2",
-    "webpack": "^3.5.4"
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
@@ -34,7 +35,6 @@
     "immutability-helper": "^2.2.2",
     "prop-types": "^15.5.9",
     "react": "^15.5.4",
-    "react-chartjs-2": "^2.5.7",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",

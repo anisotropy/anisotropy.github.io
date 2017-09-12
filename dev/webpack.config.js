@@ -5,6 +5,10 @@ module.exports = {
 	devtool: 'eval-source-map',
 	entry: config.entry,
 	output: config.output,
+	devServer: {
+		contentBase: '../',
+		inline: true
+	},
 	module: {
 		rules: [
 			{
