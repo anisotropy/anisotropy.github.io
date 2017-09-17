@@ -1,7 +1,6 @@
 import update from 'immutability-helper';
 
 const initialState = {
-	content: ''
 };
 
 const home = (state = initialState, action) => {

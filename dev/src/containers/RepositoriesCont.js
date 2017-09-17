@@ -1,4 +1,5 @@
 import {connect} from 'react-redux';
+import actions from '../actions/actions.js';
 import Repositories from '../components/Repositories';
 
 const RepositoriesCont = connect(
@@ -6,7 +7,7 @@ const RepositoriesCont = connect(
 
 	}),
 	(dispatch) => ({
-
+		setCurrentPath: () => dispatch(actions.setCurrentPath('/repositories'))
 	})
 )(Repositories);
 

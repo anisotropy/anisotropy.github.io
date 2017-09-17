@@ -6,18 +6,19 @@ import homepageStore from './store/homepageStore';
 import HomeCont from './containers/HomeCont';
 import RepositoriesCont from './containers/RepositoriesCont';
 import MenuCont from './containers/MenuCont';
+import './style/index.less';
 
 render(
-	<Provider store={homepageStore}>
-		<HashRouter>
-			<div className="homepage">
-				<MenuCont />
-				<div className="homepage__body">
-					<Route exact path="/" component={HomeCont} />
-					<Route path="/repositories" component={RepositoriesCont} />
-				</div>
-			</div>
-		</HashRouter>
-	</Provider>,
-	document.getElementById('root')
+  <Provider store={homepageStore}>
+    <HashRouter>
+      <div className="homepage">
+        <MenuCont />
+        <div className="homepage__body">
+          <Route exact path="/" component={HomeCont} />
+          <Route path="/repositories" component={RepositoriesCont} />
+        </div>
+      </div>
+    </HashRouter>
+  </Provider>,
+  document.getElementById('root')
 );

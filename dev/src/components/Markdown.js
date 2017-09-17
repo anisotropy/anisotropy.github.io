@@ -5,8 +5,9 @@ import marked from 'marked';
 
 class Markdown extends PureComponent {
   render(){
+    let className = (this.props.className ? 'markdown '+this.props.className : 'markdown');
     return (
-      <div {...this.props}>
+      <div className={className} {...this.props}>
         {renderHTHML(marked(this.props.children))}
       </div>
     );
