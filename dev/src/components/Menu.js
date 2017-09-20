@@ -7,7 +7,7 @@ class MenuItem extends PureComponent {
     const {to, currentPath, children} = this.props;
     return (to == currentPath ?
       <a className="menu__item--active">{children}</a> :
-      <Link className="menu__item" to={to} onClick={this.hClick}>{children}</Link>
+      <Link className="menu__item" to={to}>{children}</Link>
     );
   }
 }
@@ -22,8 +22,9 @@ class Menu extends PureComponent {
     const {currentPath} = this.props;
     return (
       <div className="menu">
-        <MenuItem to="/" currentPath={currentPath}>Home</MenuItem>
+        <MenuItem to="/" currentPath={currentPath}>anisotropy</MenuItem>
         <MenuItem to="/repositories" currentPath={currentPath}>저장소</MenuItem>
+        <MenuItem to="/blog" currentPath={currentPath}>블로그</MenuItem>
       </div>
     )
   }

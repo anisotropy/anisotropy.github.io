@@ -3,9 +3,10 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {HashRouter, Route} from 'react-router-dom';
 import homepageStore from './store/homepageStore';
+import MenuCont from './containers/MenuCont';
 import HomeCont from './containers/HomeCont';
 import RepositoriesCont from './containers/RepositoriesCont';
-import MenuCont from './containers/MenuCont';
+import BlogCont from './containers/BlogCont';
 import './style/index.less';
 
 render(
@@ -16,6 +17,7 @@ render(
         <div className="homepage__body">
           <Route exact path="/" component={HomeCont} />
           <Route path="/repositories" component={RepositoriesCont} />
+          <Route path="/blog" component={BlogCont} />
         </div>
       </div>
     </HashRouter>
