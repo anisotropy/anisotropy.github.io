@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {HashRouter, Route} from 'react-router-dom';
 import homepageStore from './store/homepageStore';
+import RootCont from './containers/RootCont';
 import MenuCont from './containers/MenuCont';
 import HomeCont from './containers/HomeCont';
 import RepositoriesCont from './containers/RepositoriesCont';
@@ -13,6 +14,7 @@ render(
   <Provider store={homepageStore}>
     <HashRouter>
       <div className="homepage">
+        <RootCont />
         <MenuCont />
         <div className="homepage__body">
           <Route exact path="/" component={HomeCont} />

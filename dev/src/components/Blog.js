@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 class Blog extends PureComponent {
   componentDidMount(){
     this.props.setCurrentPath();
+    this.props.fetch();
   }
   render(){
     return (
@@ -14,7 +15,8 @@ class Blog extends PureComponent {
   }
 }
 Blog.propTypes = {
-  setCurrentPath: PropTypes.func.isRequired
+  setCurrentPath: PropTypes.func.isRequired,
+  fetch: PropTypes.func.isRequired
 };
 
 export default Blog;

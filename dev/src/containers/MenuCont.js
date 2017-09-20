@@ -3,7 +3,7 @@ import Menu from '../components/Menu';
 
 const MenuCont = connect(
 	(state) => ({
-		currentPath: state.menu.currentPath
+		currentPath: state.root.currentPath
 	}),
 	(dispatch) => ({
 
