@@ -1,6 +1,6 @@
 const api  = {
   fetchPosts(){
-    return fetch('./data/test-.md').then((response) => (response.ok ? response.text() : null));
+    return fetch('./data/test.md').then((response) => (response.ok ? response.text() : null));
   }
 };
 
